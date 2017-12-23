@@ -3,11 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { AuthGuard } from './auth/services/auth-guard.service';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  // {path: '', redirectTo: 'home', pathMatch: 'full'},
   {
-    path: 'home',
-    loadChildren: './home/home.module#HomeModule',
-    canActivate: [AuthGuard]
+    path: '',
+    loadChildren: './home/home.module#HomeModule'
   }
 ];
 
